@@ -32,6 +32,16 @@
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="ClientApp\src\assets\images\images\Angular7.png" />
+    <Content Include="ClientApp\src\assets\images\images\aspnetcore.png" />
+    <Content Include="ClientApp\src\assets\images\images\Bootstrap4.png" />
+    <Content Include="ClientApp\src\assets\images\images\image1.jpg" />
+    <Content Include="ClientApp\src\assets\images\images\image2.jpg" />
+    <Content Include="ClientApp\src\assets\images\images\image3.jpeg" />
+    <Content Include="ClientApp\src\assets\images\images\logo.png" />
+  </ItemGroup>
+
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">
